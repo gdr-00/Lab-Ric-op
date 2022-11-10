@@ -1,0 +1,6 @@
+reset;
+model contadino_alternativo.mod;
+data contadino_alternativo.dat;
+option solver gurobi;
+solve;
+display Profitto, Prodotti.1, Prodotti.2;
