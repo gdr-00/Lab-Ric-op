@@ -1,6 +1,6 @@
 reset;
-model spW.mod; #maxf.mod uguale per sp.mod, spH.mod ed spW.mod;
-data spW.dat; #maxf.dat uguale per sp.dat, spH.dat ed spW.dat;
+model spW.mod; #maxf.mod uguale per sp.mod, spH.mod, spW.mod, mcf.mod;
+data spW.dat; #maxf.dat uguale per sp.dat, spH.dat, spW.dat, mcf.dat;
 option solver cplex;
 
 option relax_integrality 0;

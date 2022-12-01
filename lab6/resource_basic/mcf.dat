@@ -8,7 +8,7 @@ set ARC  :=  (A,B) (A,C)
 ;
 
 param b  default 0 :=
-  A -4
+  A -4 #ho 4 unità in più di quelle che servono quindi voglio che ne escano 4 in più di quelle che escono
   B -4
   C  6
   D 10
