@@ -1,5 +1,5 @@
 set NODE;
-set ARC within NODE cross NODE;
+set ARC within NODE cross NODE; #modello esercizio automobili
 
 param b{NODE};
 param c{ARC};

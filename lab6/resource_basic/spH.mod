@@ -14,4 +14,4 @@ minimize path_cost:
 s.t. balance { v in NODE }:
 	 sum { (i,v) in ARC } x[i,v] - sum { (v,j) in ARC } x[v,j] = b[v];
 
-s.t. max_hop:  sum { (i,j) in ARC } x[i,j] <= maxHop;
+s.t. max_hop:  sum { (i,j) in ARC } x[i,j] <= maxHop;   #vincolo per avere un cammino di lunghezza massima maxf

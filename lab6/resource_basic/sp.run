@@ -1,6 +1,6 @@
 reset;
-model maxf.mod; #maxf.mod;
-data maxf.dat; #maxf.dat;
+model spW.mod; #maxf.mod uguale per sp.mod, spH.mod ed spW.mod;
+data spW.dat; #maxf.dat uguale per sp.dat, spH.dat ed spW.dat;
 option solver cplex;
 
 option relax_integrality 0;
@@ -9,4 +9,8 @@ display {(i,j) in ARC: x[i,j] > 0} x[i,j];
 
 option relax_integrality 1;
 solve;
-display {(i,j) in ARC: x[i,j] > 0} x[i,j];
+display {(i,j) in ARC: x[i,j] > 0} x[i,j]; #spW con rilassamento continuo permette di trovare una soluzione con 
+                                            #peso minimo su più "strade" per esempio per l'instradamento di 
+                                            #pacchetti posso inviare 11.4286% in una strada, l'88...% in un altra 
+                                            #smistandoli per avere un consumo massimo prefissato e il cammino 
+                                            #minimo per la destinazione

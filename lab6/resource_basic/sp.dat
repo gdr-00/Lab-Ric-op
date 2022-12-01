@@ -1,5 +1,5 @@
 set NODE := A B C D E F;
-set ARC  :=  (A,B) (A,C)
+set ARC  :=  (A,B) (A,C) #ordinati per archi uscenti da ogni nodo
              (B,C) (B,D) (B,E) (B,F)
              (C,F)
              (D,F)
@@ -8,7 +8,7 @@ set ARC  :=  (A,B) (A,C)
 ;
 
 
-param b  default 0 :=
+param b  default 0 := #setto nodo di partenza e nodo di arrivo in cui il vincolo deve rispettivamente valere -1 e 1
   A -1
   F 1
 ;

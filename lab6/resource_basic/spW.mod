@@ -3,8 +3,8 @@ set ARC within NODE cross NODE;
 
 param b{NODE};
 param c{ARC};
-param w{ARC};
-param W;
+param w{ARC}; # Consumo del'arco
+param W; # Capacità disponibile per il consumo (batteria della bici)
 
 var x{ARC} binary;
 
